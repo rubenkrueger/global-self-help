@@ -1,116 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome - Global Self Help - Connecting People For Social Good</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <style type="text/css">
-        .scroll-area {
-            overflow: auto;
-        }
-        #section-1{
-            padding-top: 200px;
-        }
-        .mission-statement{
-            background-color: aquamarine;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body  class="scroll-area" data-spy="scroll" data-target="#myNavbar" data-offset="60">
-<div class="container">
-    <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">GLOBAL SELF-HELP</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GLOBAL SELF HELP</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#section-1">MISSION STATEMENT</a></li>
-                    <li><a href="#section-2">THE VISION</a></li>
-                    <li><a href="#section-3">WHAT WE DO</a></li>
+                    <li><a href="#section1">MISSION STATEMENT</a></li>
+                    <li><a href="#section2">THE VISION</a></li>
+                    <li><a href="#section3">WHAT WE DO</a></li>
+                    <li><a href="#section4">GET INVOLVED</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <div>
-        <h1 id="section-1" class="text-center">MISSION STATEMENT</h1>
-        <h3 class="text-justify">Connect third world entrepreneurs with experts, resources, and capital in the first world.</h3>
-        <hr>
-        <h1 id="section-2" class="text-center">THE VISION</h1>
-        <h3 class="text-justify">Eliminate dependency / Foster the entrepreneurial spirit / Create global teamwork</h3>
-        <hr>
-        <h1 id="section-3" class="text-center">WHAT WE DO</h1>
-        <h3 class="text-justify">In developing countries, foreign aid can reinforce the poverty cycle by competing with local economies and
-            rendering homegrown efforts ineffective, Global Self Help looks to support innovators by connecting them
-            with advisers and resources. Whether it is through expert advice or financial patronage -- the power is with
-            the entrepreneur.
-        </h3>
-        <hr>
     </div>
+</nav>
+
+<div id="section1" class="container-fluid">
+    <h1 id="section-1" class="text-center">MISSION STATEMENT</h1>
+    <h3 class="text-center">Connect third world entrepreneurs with experts, resources, and capital in the first world.</h3>
+</div>
+<div id="section2" class="container-fluid">
+    <h1 id="section-2" class="text-center">THE VISION</h1>
+    <h3 class="text-center">Eliminate dependency / Foster the entrepreneurial spirit / Create global teamwork</h3>
+</div>
+<div id="section3" class="container-fluid">
+    <h1 id="section-3" class="text-center">WHAT WE DO</h1>
+    <h3 class="text-center">In developing countries, foreign aid can reinforce the poverty cycle by competing with local economies and
+        rendering homegrown efforts ineffective, Global Self Help looks to support innovators by connecting them
+        with advisers and resources. Whether it is through expert advice or financial patronage -- the power is with
+        the entrepreneur.</h3>
+</div>
+<div id="section4" class="container-fluid">
+    <h1 id="section-4" class="text-center">GET INVOLVED</h1>
+    <h3 class="text-center">
+        1. Donate or Volunteer at GSH<br>
+        2. Become an adviser for a social entrepreneur<br>
+        3. Seek help as an social entrepreneur
+    </h3>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script>
-
-    $(function(){ // anonymous function loads when the document is ready or the DOM is loaded
-
-        $('a[href*=#]:not([href=#])').click(function(){
-            // <a href="#top"> = yes
-            // <a href="#"> = No
-
-            var pathName = location.pathname;
-            var thisPathName = this.pathname;
-            var locHost = location.hostname;
-            var thisHost = this.hostname;
-            // alert('this.hash = ' + this.hash );
-
-            // = is the assignment operator
-            // == is equal to. values match.
-            // === is literaly equal to. values and type match!
-
-            if( pathName == thisPathName && locHost == thisHost ){
-                // if both are TRUE than the evaluation is TRUE
-                // 'pathName' is equal to 'thisPathName' AND 'locHost' is equal to 'thisHost'
-
-                var target = $(this.hash);
-
-                // This is a tenary function. variable = object ? True : False;
-
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-
-                if(target.length){
-
-                    $('html,body').animate( { scrollTop: $( target ).offset().top - 65 }, 1250 );
-                }
-            }
-        });
-    });
-
-    $(document).ready(function(){
-
-        $('ul.nav li.dropdown').hover(function(){
-
-            $(this).find('.dropdown-menu').delay(100).fadeIn(50);
-
-        }, function(){
-
-            $(this).find('.dropdown-menu').delay(100).fadeOut(50);
-
-        });
-    });
-</script>
-
+<footer>
+    <div class="container-fluid">
+        <h4 class="text-center footer-text">Global Self-Help is a 501(c)(3) non-profit</h4>
+    </div>
+</footer>
 </body>
 </html>

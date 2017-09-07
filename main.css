@@ -1,26 +1,36 @@
-
-.the-mission-statement {
-    margin: 0;
+body {
+    position: relative;
+}
+#section1 {
     padding-top:50px;
     height:300px;
     color: #fff;
     background-color: #1E88E5;
 }
 
-#mission{
-    display:none;
-}
-
-.the-vision {
-    padding:50px 40px 40px 0;
-    height:300px;
-    color: #fff;
-    background-color: #d31547;
-}
-
-.what-we-do{
+#section2 {
     padding-top:50px;
-    height:300px;
-    color: #fff;
-    background-color: #f4a442;
+    height:300px;color: #fff;
+    background-color: #a4abb5;
+}
+
+#section3 {padding-top:50px;
+    height:300px;color: #fff;
+    background-color: #cc3030;
+}
+
+#section4 {
+    padding-top:50px;
+    height:300px;color: #fff;
+    background-color: #19d67e;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+}
+
+.footer-text{
+    padding-top: 30px;
+    color: white;
 }
