@@ -1,4 +1,4 @@
 Global Self Help
 ================
 
-Global Self Help is an initiative which connects third world entrepreneurs with experts, resources, and capital in the first world.
+To enhance aid effectiveness in developing countries by emphasizing self-sufficiency, Global Self Help is a sustainable development initiative which connects social entrepreneurs in developing countries to experts, resources, and capital.
