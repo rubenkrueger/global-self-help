@@ -4,7 +4,7 @@ body {
 }
 
 nav{
-
+    background-color: white;
 }
 
 #section1 {
@@ -35,10 +35,10 @@ nav{
 
 footer{
     height: 100px;
-    background-color: black;
+    background-color: white;
 }
 
 .footer-text{
     padding-top: 30px;
-    color: white;
+    color: black;
 }
