@@ -1,7 +1,9 @@
 body {
     position: relative;
-    font-family: sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
 }
+
+
 #section1 {
     padding-top:50px;
     margin-top: 50px;
